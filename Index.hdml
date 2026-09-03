@@ -3,113 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Olivia McDonald | Homepage</title>
-    <style>
-        /* Base page styling */
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            line-height: 1.6;
-            background-color: #f4f7f6;
-            color: #333333;
-            margin: 0;
-            padding: 0;
-        }
-
-        /* Centered content container */
-        .container {
-            max-width: 700px;
-            margin: 50px auto;
-            padding: 0 20px;
-        }
-
-        /* Header banner */
-        header {
-            background-color: #2c3e50;
-            color: #ffffff;
-            padding: 40px 20px;
-            text-align: center;
-            border-radius: 12px 12px 0 0;
-        }
-
-        header h1 {
-            margin: 0;
-            font-size: 2.2rem;
-        }
-
-        header p {
-            margin-top: 8px;
-            font-size: 1.1rem;
-            opacity: 0.9;
-        }
-
-        /* Main content area */
-        main {
-            background-color: #ffffff;
-            padding: 30px 40px;
-            border-radius: 0 0 12px 12px;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
-        }
-
-        /* Content sections */
-        section {
-            margin-bottom: 25px;
-        }
-
-        section:last-child {
-            margin-bottom: 0;
-        }
-
-        h2 {
-            color: #d35400;
-            font-size: 1.3rem;
-            margin-bottom: 10px;
-            border-bottom: 2px solid #f2f2f2;
-            padding-bottom: 5px;
-        }
-
-        p {
-            margin: 0;
-            font-size: 1.05rem;
-        }
-
-        /* Footer */
-        footer {
-            text-align: center;
-            margin-top: 30px;
-            font-size: 0.9rem;
-            color: #7f8c8d;
-        }
-    </style>
+    <title>About Olivia McDonald</title>
 </head>
 <body>
 
-    <div class="container">
-        <header>
-            <h1>Olivia McDonald</h1>
-            <p>Welcome to my homepage!</p>
-        </header>
+    <header>
+        <h1>Olivia McDonald</h1>
+    </header>
 
-        <main>
-            <section>
-                <h2>Education</h2>
-                <p>I graduated high school in 2024 and I am currently in college, set to graduate in 2028.</p>
-            </section>
+    <main>
+        <section>
+            <h2>About Me</h2>
+            <p>Hello, my name is Olivia McDonald. I graduated high school in 2024, and I will be done with college in 2028.</p>
+        </section>
 
-            <section>
-                <h2>My Pets</h2>
-                <p>I really enjoy spending time with my golden retriever, and I like to watch my fish swim around his tank.</p>
-            </section>
+        <section>
+            <h2>My Pets</h2>
+            <p>I really enjoy spending time with my golden retriever, and I like to watch my fish swim around his tank.</p>
+        </section>
 
-            <section>
-                <h2>Hobbies & Interests</h2>
-                <p>My favorite activity to do is watch TV or do crafts with friends.</p>
-            </section>
-        </main>
-
-        <footer>
-            <p>&copy; 2026 Olivia McDonald</p>
-        </footer>
-    </div>
+        <section>
+            <h2>Hobbies & Activities</h2>
+            <p>My favorite activity to do is watch TV or do crafts with friends.</p>
+        </section>
+    </main>
 
 </body>
 </html>
