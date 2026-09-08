@@ -1,8 +1,8 @@
 document.addEventListener("DOMContentLoaded", () => {
-    // Navigation Data Configuration
+    // Shared navigation link configurations
     const primaryLinks = [
         { name: "Home", url: "index.html" },
-        { name: "About", url: "#" },
+        { name: "About Us", url: "#" },
         { name: "Services", url: "#" },
         { name: "Contact", url: "#" }
     ];
@@ -10,10 +10,10 @@ document.addEventListener("DOMContentLoaded", () => {
     const secondaryLinks = [
         { name: "FAQ", url: "#" },
         { name: "Support", url: "#" },
-        { name: "Docs", url: "#" }
+        { name: "Documentation", url: "#" }
     ];
 
-    // Helper function to build <ul> menus
+    // Helper to dynamically build <ul> menu structures
     function createNavList(links, className) {
         const ul = document.createElement("ul");
         ul.className = `nav-menu ${className}`;
@@ -30,14 +30,14 @@ document.addEventListener("DOMContentLoaded", () => {
         return ul;
     }
 
-    // Inject Navigation into Header
+    // Inject links into the Top Header Navigation bar
     const headerNav = document.getElementById("header-navigation");
     if (headerNav) {
         headerNav.appendChild(createNavList(primaryLinks, "primary-nav"));
         headerNav.appendChild(createNavList(secondaryLinks, "secondary-nav"));
     }
 
-    // Inject Navigation into Sidebar
+    // Inject links into the Left Sidebar Navigation panel
     const sidebarNav = document.getElementById("sidebar-navigation");
     if (sidebarNav) {
         const primarySection = document.createElement("div");
@@ -47,7 +47,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
         const secondarySection = document.createElement("div");
         secondarySection.className = "sidebar-section";
-        secondarySection.innerHTML = "<h3>Secondary Navigation</h3>";
+        secondarySection.innerHTML = "<h3>Secondary navigation if needed</h3>";
         secondarySection.appendChild(createNavList(secondaryLinks, "sidebar-secondary"));
 
         sidebarNav.appendChild(primarySection);
