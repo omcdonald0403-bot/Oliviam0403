@@ -3,212 +3,65 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Olivia McDonald | Homepage</title>
-    <style>
-        /* Base page styling */
-        html {
-            scroll-behavior: smooth;
-        }
-
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            line-height: 1.6;
-            background-color: #f4f7f6;
-            color: #333333;
-            margin: 0;
-            padding: 0;
-        }
-
-        /* Fixed Top-Left Navigation Bar */
-        .nav-container {
-            position: fixed;
-            top: 15px;
-            left: 15px;
-            z-index: 1000;
-        }
-
-        .menu-btn {
-            background-color: #2c3e50;
-            color: #ffffff;
-            border: none;
-            padding: 10px 18px;
-            font-size: 0.95rem;
-            font-weight: 600;
-            border-radius: 6px;
-            cursor: pointer;
-            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
-            transition: background 0.2s ease;
-        }
-
-        .menu-btn:hover {
-            background-color: #1a252f;
-        }
-
-        .dropdown-content {
-            display: none;
-            position: absolute;
-            top: 45px;
-            left: 0;
-            background-color: #ffffff;
-            min-width: 160px;
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-            border-radius: 6px;
-            overflow: hidden;
-        }
-
-        .dropdown-content a {
-            color: #333333;
-            padding: 12px 16px;
-            text-decoration: none;
-            display: block;
-            font-size: 0.95rem;
-            transition: background 0.2s ease, color 0.2s ease;
-        }
-
-        .dropdown-content a:hover {
-            background-color: #f0f0f0;
-            color: #d35400;
-        }
-
-        /* Display toggled by JavaScript */
-        .show {
-            display: block;
-        }
-
-        /* Page Layout */
-        .container {
-            max-width: 700px;
-            margin: 80px auto 50px auto;
-            padding: 0 20px;
-        }
-
-        header {
-            background-color: #2c3e50;
-            color: #ffffff;
-            padding: 40px 20px;
-            text-align: center;
-            border-radius: 12px 12px 0 0;
-        }
-
-        header h1 {
-            margin: 0;
-            font-size: 2.2rem;
-        }
-
-        header p {
-            margin-top: 8px;
-            font-size: 1.1rem;
-            opacity: 0.9;
-        }
-
-        main {
-            background-color: #ffffff;
-            padding: 30px 40px;
-            border-radius: 0 0 12px 12px;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
-        }
-
-        section {
-            margin-bottom: 35px;
-            padding-top: 10px;
-        }
-
-        section:last-child {
-            margin-bottom: 0;
-        }
-
-        h2 {
-            color: #d35400;
-            font-size: 1.3rem;
-            margin-bottom: 10px;
-            border-bottom: 2px solid #f2f2f2;
-            padding-bottom: 5px;
-        }
-
-        p {
-            margin: 0;
-            font-size: 1.05rem;
-        }
-
-        footer {
-            text-align: center;
-            margin-top: 30px;
-            font-size: 0.9rem;
-            color: #7f8c8d;
-        }
-    </style>
+    <title>Layout Wireframe</title>
+    <link rel="stylesheet" href="Style.css">
 </head>
 <body>
 
-    <!-- Top-Left Navigation Menu -->
-    <nav class="nav-container">
-        <button class="menu-btn" id="menuToggle">☰ Menu</button>
-        <div class="dropdown-content" id="navDropdown">
-            <a href="#me">Me</a>
-            <a href="#research">Research</a>
-            <a href="#personal">Personal</a>
+    <div class="site-container">
+        
+        <!-- Logo Header -->
+        <div class="logo-area">
+            Logo
         </div>
-    </nav>
 
-    <!-- Main Content Container -->
-    <div class="container">
-        <header>
-            <h1>Olivia McDonald</h1>
-            <p>Welcome to my homepage!</p>
+        <!-- Info Graphics Banner -->
+        <header class="info-banner">
+            <p>This area is for informational graphics which describe in images what your site is about.</p>
         </header>
 
-        <main>
-            <!-- Me Section -->
-            <section id="me">
-                <h2>Me</h2>
-                <p>Hello, my name is Olivia McDonald. I graduated high school in 2024 and I am currently attending college, set to graduate in 2028.</p>
-            </section>
+        <!-- Dynamic Header Navigation -->
+        <nav class="header-nav" id="header-navigation"></nav>
 
-            <!-- Research Section -->
-            <section id="research">
-                <h2>Research</h2>
-                <p>Welcome to my research section! Here you will find updates on my academic projects, lab work, coursework, and ongoing studies.</p>
-            </section>
+        <!-- Dynamic Sidebar Navigation -->
+        <aside class="sidebar-nav" id="sidebar-navigation"></aside>
 
-            <!-- Personal Section -->
-            <section id="personal">
-                <h2>Personal</h2>
-                <p>In my free time, I really enjoy spending time with my golden retriever and watching my fish swim around his tank. My favorite activities are watching TV or doing crafts with my friends.</p>
+        <!-- Main Content Area -->
+        <main class="main-content">
+            <div class="hero-image-container">
+                <h2>Hero image at top</h2>
+            </div>
+
+            <section class="content-body">
+                <h1>Main content area</h1>
+                <p>This area HAS to contain html text and images (ie not image text). Text should be around 400 words and contain 5-7% keywords.</p>
             </section>
         </main>
 
-        <footer>
-            <p>&copy; 2026 Olivia McDonald</p>
+        <!-- Sticky Sidebar Content -->
+        <aside class="sticky-sidebar">
+            <h3>Sticky content such as:</h3>
+            <ul>
+                <li>News items</li>
+                <li>Adverts</li>
+                <li>Offers</li>
+                <li>General site info</li>
+            </ul>
+            <h3>Social Networking icons</h3>
+            <div class="social-icons">
+                <span>[FB]</span>
+                <span>[TW]</span>
+                <span>[IG]</span>
+            </div>
+        </aside>
+
+        <!-- Footer -->
+        <footer class="site-footer">
+            Footer: Contains copyright info, current year, primary links, contact, privacy statement, webmaster email address
         </footer>
+
     </div>
 
-    <!-- Navigation Control Script -->
-    <script>
-        document.addEventListener('DOMContentLoaded', () => {
-            const menuBtn = document.getElementById('menuToggle');
-            const dropdown = document.getElementById('navDropdown');
-
-            // Open or close dropdown when clicking the menu button
-            menuBtn.addEventListener('click', (event) => {
-                event.stopPropagation();
-                dropdown.classList.toggle('show');
-            });
-
-            // Close dropdown when clicking anywhere outside
-            window.addEventListener('click', () => {
-                if (dropdown.classList.contains('show')) {
-                    dropdown.classList.remove('show');
-                }
-            });
-
-            // Close dropdown after clicking a navigation link
-            dropdown.querySelectorAll('a').forEach(link => {
-                link.addEventListener('click', () => {
-                    dropdown.classList.remove('show');
-                });
-            });
-        });
-    </script>
-
+    <script src="nav.js"></script>
 </body>
 </html>
