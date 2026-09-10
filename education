@@ -27,7 +27,7 @@
         <aside class="sidebar-nav" id="sidebar-navigation"></aside>
 
         <!-- Main Content Area -->
-        <main class="main-content">
+        <main class="education">
             <div class="hero-image-container">
                 <h2>Hero image at top</h2>
             </div>
