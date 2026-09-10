@@ -1,8 +1,8 @@
 document.addEventListener("DOMContentLoaded", () => {
     // Shared navigation link configurations
     const primaryLinks = [
-        { name: "Home", url: "index.html" },
-        { name: "About Us", url: "#" },
+        { name: "Home", url: "education.html" },
+        { name: "Education", url: "#" },
         { name: "Services", url: "#" },
         { name: "Contact", url: "#" }
     ];
