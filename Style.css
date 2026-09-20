@@ -41,6 +41,14 @@ body {
     font-weight: bold;
 }
 
+/* Keep the logo comfortably inside its bordered frame. */
+.logo-image {
+    display: block;
+    width: min(100%, 120px);
+    height: auto;
+    object-fit: contain;
+}
+
 .info-banner {
     grid-area: info;
     border-bottom: 2px solid #000000;
