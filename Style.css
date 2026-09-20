@@ -16,7 +16,7 @@ body {
 /* Main Grid Container matching the wireframe structure */
 .site-container {
     background-color: #ffffff;
-    border: 2px solid #000000;
+    border: 1px solid #000000;
     display: grid;
     grid-template-columns: 220px 1fr 220px;
     grid-template-rows: auto auto 1fr auto;
@@ -31,8 +31,8 @@ body {
 /* Header & Logo Area */
 .logo-area {
     grid-area: logo;
-    border-right: 2px solid #000000;
-    border-bottom: 2px solid #000000;
+    border-right: 1px solid #000000;
+    border-bottom: 1px solid #000000;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -51,14 +51,14 @@ body {
 
 .info-banner {
     grid-area: info;
-    border-bottom: 2px solid #000000;
+    border-bottom: 1px solid #000000;
     padding: 15px;
     background-color: #ffffff;
 }
 
 .header-nav {
     grid-area: nav;
-    border-bottom: 2px solid #000000;
+    border-bottom: 1px solid #000000;
 }
 
 /* Navigation Lists Layout */
@@ -92,7 +92,7 @@ body {
 /* Primary / Secondary Left Sidebar */
 .sidebar-nav {
     grid-area: sidebar;
-    border-right: 2px solid #000000;
+    border-right: 1px solid #000000;
     padding: 20px 15px;
     background-color: #ffffff;
 }
@@ -120,8 +120,8 @@ body {
 }
 
 .hero-image-container {
-    border: 2px solid #000000;
-    padding: 20px 15px;
+    border: 1px solid #000000;
+    padding: 15px 12px;
     margin-bottom: 30px;
     background-color: #ffffff;
     display: flex;
@@ -131,7 +131,7 @@ body {
 
 .hero-image {
     display: block;
-    width: min(70%, 560px);
+    width: min(75%, 600px);
     max-width: 100%;
     height: auto;
     object-fit: contain;
@@ -155,7 +155,7 @@ body {
 /* Right Side Sticky Column */
 .sticky-sidebar {
     grid-area: sticky;
-    border-left: 2px solid #000000;
+    border-left: 1px solid #000000;
     padding: 20px 15px;
     background-color: #ffffff;
     position: sticky;
@@ -188,7 +188,7 @@ body {
 /* Footer Area */
 .site-footer {
     grid-area: footer;
-    border-top: 2px solid #000000;
+    border-top: 1px solid #000000;
     padding: 15px 20px;
     text-align: center;
     font-size: 0.9rem;
