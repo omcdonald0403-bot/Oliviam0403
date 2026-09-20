@@ -1,88 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Olivia M. — front-end developer and creative technologist portfolio.">
-  <title>Olivia M. — Front-end developer</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="Style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wireframe Layout</title>
+    <link rel="stylesheet" href="Style.css">
 </head>
 <body>
-  <div class="site-shell">
-    <header class="site-header">
-      <a class="brand" href="#top" aria-label="Olivia M. home">OM<span>.</span></a>
-      <nav class="desktop-nav" aria-label="Primary navigation">
-        <a href="#work">Work</a>
-        <a href="#about">About</a>
-        <a href="#contact">Contact</a>
-      </nav>
-      <a class="header-cta" href="mailto:hello@oliviam.dev">Let's talk <span aria-hidden="true">↗</span></a>
-    </header>
+    <div class="site-container">
+        <div class="logo-area">Logo</div>
 
-    <main id="top">
-      <section class="hero section-pad" aria-labelledby="hero-title">
-        <div class="hero-copy">
-          <p class="eyebrow"><span class="status-dot"></span> Available for select projects</p>
-          <h1 id="hero-title">Building digital experiences with <em>clarity</em> and character.</h1>
-          <p class="hero-intro">I'm Olivia, a front-end developer and creative problem solver turning thoughtful ideas into fast, accessible websites.</p>
-          <div class="hero-actions">
-            <a class="button button-dark" href="#work">See my work <span aria-hidden="true">↓</span></a>
-            <a class="text-link" href="mailto:hello@oliviam.dev">Get in touch <span aria-hidden="true">↗</span></a>
-          </div>
-        </div>
-        <div class="hero-art" aria-label="Abstract illustration">
-          <div class="art-orbit orbit-one"></div>
-          <div class="art-orbit orbit-two"></div>
-          <div class="art-sun">hello<br>world<span>✦</span></div>
-          <div class="art-note note-one">ideas<br>→ reality</div>
-          <div class="art-note note-two">made<br>with care</div>
-        </div>
-      </section>
+        <header class="info-banner">
+            <p>This area is for informational graphics which describe in images what your site is about</p>
+        </header>
 
-      <section class="marquee" aria-label="Skills">
-        <div class="marquee-track"><span>HTML</span><i>✳</i><span>CSS</span><i>✳</i><span>JavaScript</span><i>✳</i><span>Responsive design</span><i>✳</i><span>Accessible by default</span><i>✳</i><span>HTML</span><i>✳</i><span>CSS</span><i>✳</i><span>JavaScript</span></div>
-      </section>
+        <nav class="header-nav" id="header-navigation"></nav>
 
-      <section id="work" class="work section-pad" aria-labelledby="work-title">
-        <div class="section-heading">
-          <p class="eyebrow">01 / Selected work</p>
-          <h2 id="work-title">A few things I've<br><em>made recently.</em></h2>
-        </div>
-        <div class="project-grid">
-          <a class="project-card project-pink" href="#contact">
-            <div class="project-top"><span>01</span><span>Web design · Development</span></div>
-            <div class="project-visual visual-flower"><span>studio<br>flora</span><b>✽</b></div>
-            <div class="project-info"><h3>Studio Flora</h3><span>View case study ↗</span></div>
-          </a>
-          <a class="project-card project-blue" href="#contact">
-            <div class="project-top"><span>02</span><span>Branding · Digital</span></div>
-            <div class="project-visual visual-shape"><span>GOOD<br>FORM</span><b>◒</b></div>
-            <div class="project-info"><h3>Good Form</h3><span>View case study ↗</span></div>
-          </a>
-          <a class="project-card project-yellow" href="#contact">
-            <div class="project-top"><span>03</span><span>Creative development</span></div>
-            <div class="project-visual visual-type"><span>move<br>with<br>purpose</span><b>↗</b></div>
-            <div class="project-info"><h3>Move With Purpose</h3><span>View case study ↗</span></div>
-          </a>
-        </div>
-      </section>
+        <aside class="sidebar-nav" id="sidebar-navigation"></aside>
 
-      <section id="about" class="about section-pad" aria-labelledby="about-title">
-        <div class="about-label"><p class="eyebrow">02 / About me</p><span class="about-mark">✳</span></div>
-        <div class="about-copy"><h2 id="about-title">The web should feel <em>human.</em></h2><p>I care about the details that make a site feel effortless: clear writing, considered interactions, and a little bit of surprise. I combine a practical front-end toolkit with a visual eye to make work that feels as good as it functions.</p><p>When I'm not at my desk, you'll find me collecting typography, exploring new places, or making an unnecessarily detailed playlist.</p><a class="text-link" href="mailto:hello@oliviam.dev">More about me <span aria-hidden="true">↗</span></a></div>
-      </section>
+        <main class="main-content">
+            <div class="hero-image-container">
+                <h2>Hero image at top</h2>
+            </div>
 
-      <section id="contact" class="contact section-pad" aria-labelledby="contact-title">
-        <p class="eyebrow">03 / Start a conversation</p>
-        <h2 id="contact-title">Have a good idea?<br><em>Let's make it real.</em></h2>
-        <a class="contact-email" href="mailto:hello@oliviam.dev">hello@oliviam.dev <span aria-hidden="true">↗</span></a>
-      </section>
-    </main>
+            <section class="content-body">
+                <h1>Main content area</h1>
+                <p>This area HAS to contain html text and images (ie not image text). Text should be around 400 words and contain 5-7% keywords</p>
+            </section>
+        </main>
 
-    <footer class="site-footer"><span>© 2026 Olivia M.</span><span>Designed & built with intention.</span><div><a href="https://github.com/omcdonald0403-bot/Oliviam0403">GitHub ↗</a><a href="#top">Back to top ↑</a></div></footer>
-  </div>
+        <aside class="sticky-sidebar">
+            <h3>Sticky content such as</h3>
+            <ul>
+                <li>news items</li>
+                <li>adverts</li>
+                <li>offers</li>
+                <li>general site info</li>
+                <li>Social Networking icons</li>
+            </ul>
+            <div class="social-icons">
+                <span>[Icon]</span>
+                <span>[Icon]</span>
+                <span>[Icon]</span>
+            </div>
+        </aside>
+
+        <footer class="site-footer">
+            Footer: Contains copyright info, current year, primary links, contact, privacy statement, webmaster email address
+        </footer>
+    </div>
+
+    <script src="nav.js"></script>
 </body>
 </html>
