@@ -124,6 +124,17 @@ body {
     padding: 40px 20px;
     margin-bottom: 30px;
     background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-image {
+    display: block;
+    width: min(75%, 600px);
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
 }
 
 .hero-image-container h2 {
