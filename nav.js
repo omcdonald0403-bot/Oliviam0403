@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", () => {
         { name: "Home", url: "index.html" },
         { name: "education", url: "education.html" },
         { name: "portfolio", url: "portfolio.html" },
-        { name: "Contact", url: "#" }
+        { name: "Contact", url: "Contact.html" }
     ];
 
     const secondaryLinks = [
