@@ -131,7 +131,7 @@ body {
 
 .hero-image {
     display: block;
-    width: min(60%, 480px);
+    width: min(70%, 560px);
     max-width: 100%;
     height: auto;
     object-fit: contain;
