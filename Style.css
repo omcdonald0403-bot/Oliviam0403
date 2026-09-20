@@ -1,4 +1,4 @@
-/* Reset and base layout setup */
+/* Reset and base styles */
 * {
     box-sizing: border-box;
     margin: 0;
@@ -6,252 +6,160 @@
 }
 
 body {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Arial, sans-serif;
     line-height: 1.5;
-    background-color: #d9d9d9;
+    /* 10% margin on left and right with light pink background */
+    background-color: #ffe6eb; 
+    padding: 0 10%;
     min-height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    padding: 30px 0 80px;
 }
 
-.page-frame {
-    position: relative;
-    width: min(1200px, 92vw);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.background-label {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 140px;
-    text-align: center;
-    font-size: 1.9rem;
-    line-height: 1.2;
-    color: #000;
-    font-weight: 400;
-}
-
-.background-label.left {
-    left: -165px;
-}
-
-.background-label.right {
-    right: -165px;
-}
-
+/* Main Container matching the wireframe border area */
 .site-container {
-    width: min(980px, 100%);
     background-color: #ffffff;
-    border: 3px solid #000000;
+    border: 2px solid #000;
     display: grid;
-    grid-template-columns: 240px 1fr 240px;
+    grid-template-columns: 200px 1fr 220px;
     grid-template-rows: auto auto 1fr auto;
-    grid-template-areas:
+    grid-template-areas: 
         "logo info info"
         "logo nav nav"
         "sidebar main sticky"
         "footer footer footer";
-    min-height: 760px;
+    min-height: 100vh;
 }
 
+/* --- Header Section --- */
 .logo-area {
     grid-area: logo;
-    border-right: 3px solid #000000;
-    border-bottom: 3px solid #000000;
+    border-right: 2px solid #000;
+    border-bottom: 2px solid #000;
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 25px 20px;
-    font-size: clamp(3rem, 4vw, 5rem);
-    font-weight: 700;
-    line-height: 1;
-    background-color: #f7f7f7;
+    padding: 20px;
+    font-size: 2rem;
+    font-weight: bold;
 }
 
 .info-banner {
     grid-area: info;
-    border-bottom: 3px solid #000000;
-    padding: 15px 20px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #ffffff;
-}
-
-.info-banner p {
-    font-size: clamp(1rem, 1.5vw, 1.4rem);
-    text-align: center;
-    font-weight: 400;
-    line-height: 1.3;
-}
-
-.sidebar-left {
-    grid-area: sidebar;
-    border-right: 3px solid #000000;
-    background-color: #ffffff;
-    display: flex;
-    flex-direction: column;
-}
-
-.left-box {
-    flex: 1;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-bottom: 3px solid #000000;
-    padding: 20px 15px;
-    text-align: center;
-    font-size: clamp(1.15rem, 1.8vw, 1.7rem);
-    font-weight: 400;
-    line-height: 1.2;
-}
-
-.left-box.secondary {
-    border-bottom: none;
+    border-bottom: 2px solid #000;
+    padding: 15px;
+    background-color: #f9f9f9;
 }
 
 .header-nav {
     grid-area: nav;
-    border-bottom: 3px solid #000000;
-    background-color: #ffffff;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    font-size: clamp(1.1rem, 1.5vw, 1.6rem);
-    font-weight: 400;
-    padding: 12px 15px;
+    border-bottom: 2px solid #000;
 }
 
+/* Navigation Base Styling */
+.nav-menu {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    padding: 8px 15px;
+}
+
+.primary-nav {
+    border-bottom: 1px solid #000;
+    background-color: #fff;
+}
+
+.secondary-nav {
+    background-color: #f0f0f0;
+    font-size: 0.9rem;
+}
+
+.nav-menu a {
+    text-decoration: none;
+    color: #000;
+    font-weight: 500;
+}
+
+.nav-menu a:hover {
+    text-decoration: underline;
+}
+
+/* --- Sidebar Section --- */
+.sidebar-nav {
+    grid-area: sidebar;
+    border-right: 2px solid #000;
+    padding: 15px;
+    background-color: #fafafa;
+}
+
+.sidebar-nav .nav-menu {
+    flex-direction: column;
+    gap: 10px;
+    padding: 0;
+}
+
+.sidebar-section {
+    margin-bottom: 20px;
+}
+
+.sidebar-section h3 {
+    font-size: 1rem;
+    margin-bottom: 8px;
+}
+
+/* --- Main Content Area --- */
 .main-content {
     grid-area: main;
-    padding: 18px 18px 0;
-    background-color: #ffffff;
+    padding: 20px;
 }
 
 .hero-image-container {
-    border: 3px solid #000000;
-    padding: 22px 18px;
-    margin-bottom: 18px;
-    min-height: 120px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #ffffff;
+    border: 2px solid #000;
+    padding: 40px 20px;
+    margin-bottom: 25px;
+    background-color: #f5f5f5;
 }
 
 .hero-image-container h2 {
-    font-size: clamp(2rem, 3vw, 3rem);
-    font-weight: 700;
-    line-height: 1.1;
-}
-
-.content-body {
-    padding: 0 0 15px;
+    font-size: 1.5rem;
 }
 
 .content-body h1 {
-    font-size: clamp(2rem, 3vw, 3rem);
-    margin-bottom: 12px;
-    font-weight: 700;
-    line-height: 1.1;
+    margin-bottom: 15px;
 }
 
-.content-body p {
-    font-size: clamp(1.3rem, 2vw, 2.2rem);
-    color: #111111;
-    line-height: 1.3;
-    max-width: 640px;
-    font-weight: 400;
-}
-
+/* --- Sticky Content Area --- */
 .sticky-sidebar {
     grid-area: sticky;
-    border-left: 3px solid #000000;
-    padding: 18px 15px;
-    background-color: #ffffff;
+    border-left: 2px solid #000;
+    padding: 15px;
+    background-color: #fcfcfc;
     position: sticky;
     top: 0;
     align-self: start;
 }
 
 .sticky-sidebar h3 {
-    font-size: 1.08rem;
+    font-size: 1.05rem;
     margin-bottom: 10px;
-    font-weight: 700;
-    line-height: 1.2;
 }
 
 .sticky-sidebar ul {
-    list-style-type: disc;
-    padding-left: 22px;
-    margin-bottom: 18px;
-}
-
-.sticky-sidebar li {
-    margin-bottom: 5px;
-    font-size: 1rem;
+    list-style-type: square;
+    padding-left: 18px;
+    margin-bottom: 15px;
 }
 
 .social-icons {
     display: flex;
     gap: 10px;
     margin-top: 10px;
-    flex-wrap: wrap;
-    font-size: 0.9rem;
 }
 
+/* --- Footer Area --- */
 .site-footer {
     grid-area: footer;
-    border-top: 3px solid #000000;
-    padding: 16px 20px 18px;
+    border-top: 2px solid #000;
+    padding: 15px;
     text-align: center;
-    font-size: clamp(0.9rem, 1.4vw, 1.2rem);
-    background-color: #ffffff;
-}
-
-@media (max-width: 940px) {
-    .page-frame {
-        width: min(100%, 94vw);
-    }
-
-    .background-label {
-        display: none;
-    }
-
-    .site-container {
-        grid-template-columns: 1fr;
-        grid-template-areas:
-            "logo"
-            "info"
-            "nav"
-            "sidebar"
-            "main"
-            "sticky"
-            "footer";
-    }
-
-    .logo-area,
-    .info-banner,
-    .sidebar-left,
-    .sticky-sidebar,
-    .site-footer {
-        border-right: none;
-        border-left: none;
-    }
-
-    .sidebar-left {
-        border-right: none;
-        border-bottom: 3px solid #000;
-    }
-
-    .sticky-sidebar {
-        border-left: none;
-        border-top: 3px solid #000;
-    }
+    font-size: 0.85rem;
+    background-color: #fff;
 }
