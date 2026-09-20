@@ -3,89 +3,61 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Education & Degree Programs | EduPortal</title>
+    <meta name="description" content="Olivia's education at Iowa State University and Waukee High School.">
+    <title>Education | Olivia M.</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="Style.css">
 </head>
 <body>
-
-    <div class="site-container">
-        
-        <!-- Logo Area -->
-        <div class="logo-area">
-            <a href="index.html" style="text-decoration: none; color: inherit;">EduPortal</a>
-        </div>
-
-        <!-- Banner Content Area -->
-        <header class="info-banner">
-            <p style="text-align: center; font-weight: bold;">
-                🎓 Fall Admissions Open: Enroll in Accredited Online Education & Degree Programs Today!
-            </p>
+    <div class="site-shell">
+        <header class="site-header">
+            <a class="brand" href="index.html" aria-label="Olivia M. home">OM<span>.</span></a>
+            <nav class="desktop-nav" aria-label="Primary navigation">
+                <a href="index.html">Home</a>
+                <a href="education.html" aria-current="page">Education</a>
+                <a href="index.html#work">Work</a>
+                <a href="index.html#contact">Contact</a>
+            </nav>
+            <a class="header-cta" href="mailto:hello@oliviam.dev">Let's talk <span aria-hidden="true">↗</span></a>
         </header>
 
-        <!-- Dynamic Header Nav (Injected via nav.js) -->
-        <nav class="header-nav" id="header-navigation"></nav>
+        <main>
+            <section class="section-pad" aria-labelledby="education-title">
+                <p class="eyebrow">01 / Education</p>
+                <h1 id="education-title">Learning with <em>purpose.</em></h1>
+                <p class="hero-intro">My academic journey combines a strong foundation from high school with my current studies in marketing at Iowa State University.</p>
+            </section>
 
-        <!-- Dynamic Sidebar Nav (Injected via nav.js) -->
-        <aside class="sidebar-nav" id="sidebar-navigation"></aside>
+            <section class="about section-pad" aria-labelledby="current-education-title">
+                <div class="about-label">
+                    <p class="eyebrow">Current education</p>
+                    <span class="about-mark" aria-hidden="true">✳</span>
+                </div>
+                <div class="about-copy">
+                    <h2 id="current-education-title">Iowa State <em>University</em></h2>
+                    <p><strong>Major:</strong> Marketing</p>
+                    <p><strong>Expected graduation:</strong> 2028</p>
+                    <p>I currently attend Iowa State University, where I am building my knowledge of marketing, communication, creative strategy, and the ways thoughtful ideas connect with people.</p>
+                </div>
+            </section>
 
-        <!-- Main Content Area -->
-        <main class="main-content">
-            <div class="hero-image-container">
-                <img src="https://via.placeholder.com/800x250?text=Modern+Education+%26+Digital+Classroom" alt="Students engaged in higher education learning in a modern classroom setting" style="width: 100%; height: auto; display: block; margin-bottom: 15px;">
-                <h2>Higher Education & Academic Excellence</h2>
-            </div>
-
-            <section class="content-body">
-                <h1>Transforming Futures Through Modern Education and Flexible Learning</h1>
-                
-                <p>Welcome to our center for higher <strong>education</strong> and academic development. In an ever-evolving world, pursuing quality <strong>education</strong> is essential for personal enrichment and career advancement. Our institution offers comprehensive <strong>degree programs</strong>, interactive <strong>learning</strong> opportunities, and accredited professional certificate <strong>courses</strong> tailored to help students succeed in today's competitive global market.</p>
-
-                <p>Our academic curriculum delivers flexible <strong>education</strong> options for traditional students and adult learners alike. Through modern distance <strong>learning</strong> platforms and structured online <strong>courses</strong>, students gain critical industry <strong>skills</strong> in technology, business, health sciences, and the humanities. Every undergraduate <strong>degree</strong> and graduate program is taught by distinguished faculty committed to high-quality instruction and hands-on academic research.</p>
-
-                <p style="text-align: center; margin: 20px 0;">
-                    <img src="https://via.placeholder.com/600x200?text=Online+Learning+and+Student+Collaboration" alt="Student utilizing laptop for online education coursework and academic studies" style="max-width: 100%; height: auto; border: 1px solid #000;">
-                </p>
-
-                <p>Quality <strong>education</strong> requires a supportive community and innovative <strong>learning</strong> environments. Our virtual campus equips students with 24/7 access to digital library archives, interactive student forums, live virtual lectures, and academic tutoring support. Whether you aim to earn a full bachelor's <strong>degree</strong>, upgrade specialized workforce <strong>skills</strong> through short certificate <strong>courses</strong>, or pursue advanced graduate research, our flexible distance <strong>education</strong> framework adapts to your busy lifestyle.</p>
-
-                <p>Invest in your future with an accredited higher <strong>education</strong> pathway designed for long-term growth. Join thousands of dedicated scholars in acquiring career-defining knowledge, practical <strong>skills</strong>, and recognized credentials. Explore our academic catalog today to find the right <strong>degree</strong> or continuous <strong>learning</strong> pathway for your professional trajectory.</p>
+            <section class="section-pad" aria-labelledby="high-school-title">
+                <p class="eyebrow">Previous education</p>
+                <h2 id="high-school-title">Waukee <em>High School</em></h2>
+                <p class="hero-intro">I graduated from Waukee High School in 2024 before beginning my college education at Iowa State University.</p>
             </section>
         </main>
 
-        <!-- Sticky Right Sidebar -->
-        <aside class="sticky-sidebar">
-            <h3>Academic Announcements</h3>
-            <ul>
-                <li><strong>New Major:</strong> B.S. in Cybersecurity & Cloud Computing now open.</li>
-                <li><strong>Scholarships:</strong> Financial aid deadlines close October 15th.</li>
-                <li><strong>Free Workshop:</strong> Effective Strategies for Online Learning — This Thursday at 4 PM.</li>
-            </ul>
-
-            <h3 style="margin-top: 20px;">Connect With Us</h3>
-            <div class="social-icons">
-                <a href="#" aria-label="Twitter">Twitter</a> |
-                <a href="#" aria-label="LinkedIn">LinkedIn</a> |
-                <a href="#" aria-label="Facebook">Facebook</a>
-            </div>
-        </aside>
-
-        <!-- Footer Area -->
         <footer class="site-footer">
-            <p>&copy; 2026 EduPortal Higher Education System. All Rights Reserved.</p>
-            <p style="margin-top: 5px; font-size: 0.85rem;">
-                <a href="index.html" style="color: inherit;">Home</a> | 
-                <a href="education.html" style="color: inherit;">Education</a> | 
-                <a href="#" style="color: inherit;">Privacy Statement</a> | 
-                <a href="#" style="color: inherit;">Terms of Service</a>
-            </p>
-            <p style="margin-top: 5px; font-size: 0.8rem;">
-                Webmaster Contact: <a href="mailto:webmaster@eduportal.example.com" style="color: inherit;">webmaster@eduportal.example.com</a>
-            </p>
+            <span>© 2026 Olivia M.</span>
+            <span>Designed &amp; built with intention.</span>
+            <div>
+                <a href="index.html">Portfolio ↗</a>
+                <a href="mailto:hello@oliviam.dev">Email ↗</a>
+            </div>
         </footer>
-
     </div>
-
-    <!-- Script loading for site navigation -->
-    <script src="nav.js"></script>
 </body>
 </html>
