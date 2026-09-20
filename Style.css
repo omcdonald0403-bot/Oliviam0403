@@ -121,7 +121,7 @@ body {
 
 .hero-image-container {
     border: 2px solid #000000;
-    padding: 40px 20px;
+    padding: 20px 15px;
     margin-bottom: 30px;
     background-color: #ffffff;
     display: flex;
@@ -131,7 +131,7 @@ body {
 
 .hero-image {
     display: block;
-    width: min(75%, 600px);
+    width: min(45%, 380px);
     max-width: 100%;
     height: auto;
     object-fit: contain;
