@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const primaryLinks = [
         { name: "Home", url: "index.html" },
         { name: "education", url: "education.html" },
-        { name: "Services", url: "#" },
+        { name: "portfolio", url: "portfolio.html" },
         { name: "Contact", url: "#" }
     ];
 
