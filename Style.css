@@ -8,15 +8,14 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
     line-height: 1.5;
-    background-color: #ffe6eb; /* Light pink background */
-    padding: 0 10%;           /* 10% margin on left and right sides */
+    background-color: #ffe6eb;
+    padding: 0 10%;
     min-height: 100vh;
 }
 
-/* Main Grid Container matching the wireframe structure */
 .site-container {
     background-color: #ffffff;
-    border: 1px solid #000000;
+    border: 2px solid #000000;
     display: grid;
     grid-template-columns: 220px 1fr 220px;
     grid-template-rows: auto auto 1fr auto;
@@ -28,20 +27,16 @@ body {
     min-height: 100vh;
 }
 
-/* Header & Logo Area */
 .logo-area {
     grid-area: logo;
-    border-right: 1px solid #000000;
-    border-bottom: 1px solid #000000;
+    border-right: 2px solid #000000;
+    border-bottom: 2px solid #000000;
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 20px;
-    font-size: 2.5rem;
-    font-weight: bold;
 }
 
-/* Keep the logo comfortably inside its bordered frame. */
 .logo-image {
     display: block;
     width: min(100%, 120px);
@@ -51,17 +46,16 @@ body {
 
 .info-banner {
     grid-area: info;
-    border-bottom: 1px solid #000000;
+    border-bottom: 2px solid #000000;
     padding: 15px;
     background-color: #ffffff;
 }
 
 .header-nav {
     grid-area: nav;
-    border-bottom: 1px solid #000000;
+    border-bottom: 2px solid #000000;
 }
 
-/* Navigation Lists Layout */
 .nav-menu {
     list-style: none;
     display: flex;
@@ -89,10 +83,9 @@ body {
     text-decoration: underline;
 }
 
-/* Primary / Secondary Left Sidebar */
 .sidebar-nav {
     grid-area: sidebar;
-    border-right: 1px solid #000000;
+    border-right: 2px solid #000000;
     padding: 20px 15px;
     background-color: #ffffff;
 }
@@ -113,33 +106,30 @@ body {
     font-weight: bold;
 }
 
-/* Main Content Center Column */
 .main-content {
     grid-area: main;
     padding: 20px;
 }
 
 .hero-image-container {
-    border: 1px solid #000000;
-    padding: 15px 12px;
+    border: 2px solid #000000;
+    padding: 15px;
     margin-bottom: 30px;
     background-color: #ffffff;
     display: flex;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
 }
 
 .hero-image {
     display: block;
-    width: min(75%, 600px);
+    width: 100%;
     max-width: 100%;
+    max-height: 320px;
     height: auto;
-    object-fit: contain;
-}
-
-.hero-image-container h2 {
-    font-size: 1.5rem;
-    font-weight: bold;
+    object-fit: cover;
+    object-position: center;
 }
 
 .content-body h1 {
@@ -152,10 +142,9 @@ body {
     color: #333333;
 }
 
-/* Right Side Sticky Column */
 .sticky-sidebar {
     grid-area: sticky;
-    border-left: 1px solid #000000;
+    border-left: 2px solid #000000;
     padding: 20px 15px;
     background-color: #ffffff;
     position: sticky;
@@ -185,10 +174,9 @@ body {
     margin-top: 10px;
 }
 
-/* Footer Area */
 .site-footer {
     grid-area: footer;
-    border-top: 1px solid #000000;
+    border-top: 2px solid #000000;
     padding: 15px 20px;
     text-align: center;
     font-size: 0.9rem;
