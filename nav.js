@@ -1,20 +1,56 @@
 document.addEventListener("DOMContentLoaded", () => {
-  const header = document.querySelector(".site-header");
-  const links = document.querySelectorAll('.desktop-nav a[href^="#"]');
+    // Navigation Data Configuration
+    const primaryLinks = [
+        { name: "Home", url: "index.html" },
+        { name: "About", url: "#" },
+        { name: "Services", url: "#" },
+        { name: "Contact", url: "#" }
+    ];
 
-  links.forEach((link) => {
-    link.addEventListener("click", (event) => {
-      const target = document.querySelector(link.getAttribute("href"));
-      if (!target) return;
-      event.preventDefault();
-      target.scrollIntoView({ behavior: "smooth", block: "start" });
-    });
-  });
+    const secondaryLinks = [
+        { name: "FAQ", url: "#" },
+        { name: "Support", url: "#" },
+        { name: "Docs", url: "#" }
+    ];
 
-  const updateHeader = () => {
-    header.classList.toggle("is-scrolled", window.scrollY > 20);
-  };
+    // Helper function to build <ul> menus
+    function createNavList(links, className) {
+        const ul = document.createElement("ul");
+        ul.className = `nav-menu ${className}`;
+        
+        links.forEach(link => {
+            const li = document.createElement("li");
+            const a = document.createElement("a");
+            a.href = link.url;
+            a.textContent = link.name;
+            li.appendChild(a);
+            ul.appendChild(li);
+        });
+        
+        return ul;
+    }
 
-  updateHeader();
-  window.addEventListener("scroll", updateHeader, { passive: true });
+    // Inject Navigation into Header
+    const headerNav = document.getElementById("header-navigation");
+    if (headerNav) {
+        headerNav.appendChild(createNavList(primaryLinks, "primary-nav"));
+        headerNav.appendChild(createNavList(secondaryLinks, "secondary-nav"));
+    }
+
+    // Inject Navigation into Sidebar
+    const sidebarNav = document.getElementById("sidebar-navigation");
+    if (sidebarNav) {
+        const primarySection = document.createElement("div");
+        primarySection.className = "sidebar-section";
+        primarySection.innerHTML = "<h3>Primary Navigation</h3>";
+        primarySection.appendChild(createNavList(primaryLinks, "sidebar-primary"));
+
+        const secondarySection = document.createElement("div");
+        secondarySection.className = "sidebar-section";
+        secondarySection.innerHTML = "<h3>Secondary Navigation</h3>";
+        secondarySection.appendChild(createNavList(secondaryLinks, "sidebar-secondary"));
+
+        sidebarNav.appendChild(primarySection);
+        sidebarNav.appendChild(secondarySection);
+    }
 });
